@@ -1,0 +1,137 @@
+#footermylinks {
+  font-family: "Poppins", sans-serif;
+  background: #f8fafc;
+  margin: 0;
+  padding: 40px 20px;
+  color: #222;
+}
+
+#footermylinks section {
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+#footermylinks section h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #1d3557;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#footermylinks section h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #457b9d;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+#footermylinks .core-function {
+  text-align: center;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+#footermylinks .usecase-header {
+  display: flex;
+  justify-content: space-between;
+  background: #e9f1f7;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #1d3557;
+  border-left: 5px solid #457b9d;
+}
+
+#footermylinks .usecase-header span {
+  flex: 1;
+  text-align: left;
+  font-size: 16px;
+}
+
+#footermylinks .usecase-header span:last-child {
+  padding-left: 30px;
+}
+
+#footermylinks .usecase-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: all 0.3s ease;
+  border-left: 5px solid #457b9d;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#footermylinks .usecase-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+#footermylinks .usecase-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+#footermylinks .usecase-right {
+  flex: 2;
+  border-left: 2px dashed #e0e6ed;
+  padding-left: 20px;
+  min-width: 250px;
+}
+
+#footermylinks .usecase-left h3 {
+  color: #1d3557;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+#footermylinks .usecase-right p {
+  color: #444;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  #footermylinks .usecase-header {
+    display: none;
+  }
+
+  #footermylinks .usecase-card {
+    flex-direction: column;
+    border-left: none;
+    border-top: 5px solid #457b9d;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  #footermylinks .usecase-left {
+    border-bottom: 2px dashed #e0e6ed;
+    padding-bottom: 10px;
+  }
+
+  #footermylinks .usecase-left h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+
+  #footermylinks .usecase-right {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+}
