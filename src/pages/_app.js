@@ -3,6 +3,7 @@ import '@/styles/global.css';
 import '@/styles/website.css';
 import '@/styles/webnav.css';
 import '@/styles/aepsform.css';
+import '@/styles/aboutus.css';
 import '@/styles/footerlink.css';
 import Toast from '../components/Toast';
 import Head from 'next/head';

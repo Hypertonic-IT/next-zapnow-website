@@ -73,13 +73,13 @@
 
 /* Termandcondition */
 
- #termsandcondition h1,h2,h3 { color: #0b3b66; margin-top: 1.2em; font-size:25px; }
+ #termsandcondition h1,h2,h3 { color: #0a2540; margin-top: 1.2em; font-size:25px; }
     #termsandcondition h1 { font-size: 1.6rem; }
     #termsandcondition p { margin: 0.6rem 0; }
-    #termsandcondition h2 { font-size: 1.25rem; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+    #termsandcondition h2 { font-size: 1.8rem; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
     #termsandcondition ul, ol { margin: 0.4rem 0 0.8rem 1.4rem; }
     #termsandcondition .intro { margin-bottom: 1rem; }
-    #termsandcondition .part-title { background:#f7f9fb; padding:10px; border-radius:6px; margin-top:1rem; }
+    #termsandcondition .part-title { background:#f7f9fb; padding:10px; border-radius:6px; margin-top:1.8rem; text-align: center;}
     #termsandcondition .annex { margin-top: 1rem; padding-left: 0.6rem; }
     #termsandcondition .small { font-size: 0.95rem; color:#444; }
     #termsandcondition .note { background:#fffbe6; padding:8px; border-left:4px solid #ffd24d; margin:12px 0; }
@@ -90,14 +90,14 @@
 
 /* privacy */
 
-#privacy { color: #222; line-height: 1.6; margin: 2rem auto; max-width: 1100px; padding: 0 1rem; background-color: white}
-   #privacy h1, h2 { color: #0b3b66; }
+#privacy { color: #222; line-height: 1.6; margin: 2rem auto; max-width: 1100px; padding: 30px 30px; background-color: white}
+   #privacy h1, h2 { color: #0a2540; }
    #privacy h1 { font-size: 1.8rem; text-align: center; margin-bottom: 1rem; }
    #privacy h2 { font-size: 1.3rem; margin-top: 1.5rem; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
    #privacy p { margin: 0.6rem 0; }
    #privacy ul { margin: 0.5rem 0 0.8rem 1.5rem; }
    #privacy li { margin: 0.3rem 0; }
-   #privacy a { color: #0b3b66; text-decoration: none; }
+   #privacy a { color: #0a2540; text-decoration: none; }
    #privacy a:hover { text-decoration: underline; }
    #privacy .updated { text-align: right; color: #555; font-size: 0.95rem; margin-top: -1rem; }
 
@@ -114,8 +114,9 @@
       padding: 30px;
     }
    #graven header h1 {
-      font-size: 28px;
-      margin: 0 0 6px 0;
+      font-size: 1.8rem;
+      margin: 0px 0 26px 0;
+      text-align: center;
     }
    #graven header .last-updated {
       font-size: 13px;
@@ -169,3 +170,10 @@
       color: #444;
     }
   
+
+    @media(max-width:1100px)
+    {
+       #termsandcondition, #privacy, #graven  { line-height: 1.5; color: #111; padding: 32px; max-width: 1100px; margin: auto; background-color: white;
+        margin: 12px;
+      }
+    }

@@ -6,6 +6,23 @@
   color: #222;
 }
 
+#footermylinks .m-kit1> h1 {
+background: linear-gradient(90deg, #1e3cfa 0%, #f02a2a 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+#footermylinks .m-kit1> p {
+
+}
+#footermylinks .m-kit1 {
+
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+}
 #footermylinks section {
   max-width: 1100px;
   margin: auto;

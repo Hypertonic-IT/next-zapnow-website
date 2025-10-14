@@ -1,5 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaXTwitter, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa6";
+import Link from "next/link";
+
 
 export default function Footer() {
   return (
@@ -29,10 +31,10 @@ export default function Footer() {
             <ul className="list-unstyled">
               <li><a href="/footerpaymentlink#mypaymentusecase">Payment Links</a></li>
               <li><a href="/footerpaymentlink#mypaymentpos">Zapnow POS</a></li>
-              <li><a href="/footerpaymentlink#myqrcodes">QR Codes</a></li>
-              <li><a href="/footerpaymentlink#mysubscriptions">Subscriptions</a></li>
-              <li><a href="/footerpaymentlink#mysmartcollect">Smart Collect</a></li>
-              <li><a href="/footerpaymentlink#myinstantsettlements">Instant Settlements</a></li>
+              <li><a href="/footerpaymentlink#mypaymentqrcodes">QR Codes</a></li>
+              <li><a href="/footerpaymentlink#mypaymentsubscriptions">Subscriptions</a></li>
+              <li><a href="/footerpaymentlink#mypaymentsmartcollect">Smart Collect</a></li>
+              <li><a href="/footerpaymentlink#mypaymentinstantsettlements">Instant Settlements</a></li>
             </ul>
           </div>
 
@@ -64,11 +66,11 @@ export default function Footer() {
           <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
             <h6 className="fw-bold">COMPANY</h6>
             <ul className="list-unstyled">
-              <li><span>About Us</span></li>
+              <li><a href="/aboutus">About Us</a></li>
               <li><span>Careers</span></li>
-              <li><span>Terms of Use</span></li>
-              <li><span>Privacy Policy</span></li>
-              <li><span>Grievance Redressal</span></li>
+              <li><Link href="/termsandcondition" >Terms of Use</Link></li>
+              <li><Link href="/privacy" >Privacy Policy</Link></li>
+              <li><Link href="/grievance" >Grievance Redressal</Link></li>
             </ul>
 
           </div>
@@ -118,11 +120,11 @@ export default function Footer() {
           <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
             <h6 className="fw-bold">MORE</h6>
             <ul className="list-unstyled">
-              <li><span>Route</span></li>
-              <li><span>Invoices</span></li>
-              <li><span>Freelancer Payments</span></li>
-              <li><span>International Payments</span></li>
-              <li><span>Flash Checkout</span></li>
+              <li><a href="/footerpaymore#ourroutecore"> Route</a></li>
+              <li><a href="/footerpaymore#mypaymentusecase"> Invoices</a></li>
+              <li><a href="/footerpaymore#mypaymentusecase"> Freelancer Payments</a></li>
+              <li><a href="/footerpaymore#mypaymentusecase"> International Payments</a></li>
+              <li><a href="/footerpaymore#mypaymentusecase"> Flash Checkout</a></li>
             </ul>
 
           </div>

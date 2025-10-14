@@ -1,0 +1,281 @@
+/* 🔹 Hero Section with Background Image */
+#aboutmycompany .hero-sectionone {
+  position: relative;
+  width: 100%;
+  height: 500px; /* adjust as needed */
+  background: url("../../public/img/abton1.png") no-repeat center center/cover;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+
+
+/* Text Container */
+#aboutmycompany .hero-sectionone .hero-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 60px;
+}
+
+/* Text Styling */
+#aboutmycompany .hero-sectionone .hero-text {
+  color: #171616;
+  max-width: 600px;
+  text-align: left;
+}
+
+#aboutmycompany .hero-sectionone .hero-text h1 {
+  font-size: 44px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#aboutmycompany .hero-sectionone .hero-text p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+#aboutmycompany .hero-sectionone .hero-text strong {
+  color: #596fff;
+}
+
+
+#aboutmycompany .hero-sectionone .hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#aboutmycompany .hero-sectionone .hero-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive layout for Hero */
+@media (max-width: 900px) {
+  #aboutmycompany .hero-sectionone .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #aboutmycompany .hero-sectionone .hero-text {
+    padding-right: 0;
+  }
+
+  #aboutmycompany .hero-sectionone .hero-image {
+    justify-content: center;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  #aboutmycompany .hero-sectionone {
+    height: 420px;
+  }
+  #aboutmycompany .hero-sectionone .hero-overlay {
+    padding-left: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+  #aboutmycompany .hero-sectionone .hero-text h1 {
+    font-size: 28px;
+  }
+  #aboutmycompany .hero-sectionone .hero-text p {
+    font-size: 15px;
+  }
+   #aboutmycompany .hero-sectionone {
+    background: none; /* remove image */
+    height: auto;
+    border-radius: 0;
+  }
+    #aboutmycompany .hero-sectionone .hero-overlay {
+    padding: 60px 20px;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #2b6cb0, #553c9a); /* fallback background */
+    border-radius: 16px;
+    /* color:white */
+  }
+  #aboutmycompany .hero-sectionone .hero-text {
+  color: white;
+  max-width: 600px;
+  text-align: left;
+}
+#aboutmycompany .hero-sectionone .hero-text strong {
+  color: #f3f4fc;
+}
+}
+
+/* Overview Section */
+#aboutmycompany .overview-section {
+  max-width: 1100px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 16px;
+}
+
+#aboutmycompany .overview-section h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+#aboutmycompany .overview-section p {
+  color: #4b5563;
+  margin-bottom: 28px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Feature Grid */
+#aboutmycompany .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
+  margin-top: 20px;
+}
+
+#aboutmycompany .feature-card {
+  background: #fff;
+  border: 1px solid #eef2ff;
+  padding: 26px;
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(16, 24, 40, 0.04);
+  text-align: left;
+}
+
+#aboutmycompany .feature-card h3 {
+  color: #2b6cb0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#aboutmycompany .feature-card ul {
+  padding-left: 18px;
+  color: #374151;
+  margin: 0;
+}
+
+/* Why Choose Section */
+#aboutmycompany .whychoose-section {
+  background: #f7f9ff;
+  padding: 48px 16px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+#aboutmycompany .whychoose-section h2 {
+  margin-bottom: 18px;
+  color: #1f2937;
+}
+
+#aboutmycompany .why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+#aboutmycompany .why-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  color: #374151;
+  font-weight: 600;
+  text-align: center;
+}
+
+#aboutmycompany .why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+}
+
+/* Vision & Mission */
+#aboutmycompany .visionmission-section {
+  max-width: 1000px;
+  margin: 48px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  padding: 0 16px;
+}
+
+@media (max-width: 880px) {
+  #aboutmycompany .visionmission-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+#aboutmycompany .vision,
+#aboutmycompany .mission {
+  background: #ffffff;
+  border: 1px solid #eef2ff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+}
+
+#aboutmycompany .vision h2,
+#aboutmycompany .mission h2 {
+  color: #2b6cb0;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+#aboutmycompany .contact-section {
+  background: #2b6cb0;
+  color: white;
+  text-align: center;
+  padding: 40px 16px;
+  border-radius: 12px;
+  margin: 40px auto 20px;
+  max-width: 900px;
+}
+
+#aboutmycompany .contact-section a {
+  color: #ffdd57;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#aboutmycompany .contact-section a:hover {
+  color: #ffe884;
+}
+
+#aboutmycompany .tagline {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+/* Utility */
+#aboutmycompany h1,
+#aboutmycompany h2,
+#aboutmycompany h3 {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0 0 10px 0;
+}
+
+#aboutmycompany p,
+#aboutmycompany li {
+  font-size: 15px;
+}
+
+/* Small Screens Adjustments */
+@media (max-width: 600px) {
+  #aboutmycompany {
+    padding: 18px;
+  }
+
+}

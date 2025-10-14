@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 body {
-  background:#F4F7FE;
+  background:#F4F7FE !important;
 font-family: "DM Sans", sans-serif !important;
 }
 /* Setting a default font for the entire application */

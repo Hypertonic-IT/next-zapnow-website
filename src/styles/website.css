@@ -599,8 +599,16 @@ display: none;
   transition: all 0.3s ease;
 }
 
+#mywebsitefooter ul li a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
 #mywebsitefooter ul li a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  text-decoration: none;
   color: #0056b3;
 }
 
