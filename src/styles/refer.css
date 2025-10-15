@@ -1,0 +1,171 @@
+/* =========================
+   ZAPNOW - Request Demo Page Styles
+   Scoped to #mysignupzapnow
+   ========================= */
+
+:root {
+  --zap-primary: #4318FF;
+  --zap-primary-dark: #372ee0;
+  --zap-text: #1a1a3c;
+  --zap-muted: #6b7280;
+  --zap-border: #e5e7eb;
+  --zap-bg: #ffffff;
+  --zap-grad-start: #7a84f7;
+  --zap-grad-end: #3c29d0;
+}
+
+#mysignupzapnow {
+  background: var(--zap-bg);
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* =========================
+   CONTAINER
+   ========================= */
+#mysignupzapnow .login-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =========================
+   LEFT SIDE - FORM
+   ========================= */
+#mysignupzapnow .login-left {
+  padding: 6% 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+
+#mysignupzapnow .login-left h2 {
+  font-size: clamp(24px, 3.2vw, 32px);
+  font-weight: 800;
+  color: var(--zap-text);
+  margin-bottom: 24px;
+}
+
+#mysignupzapnow .login-left label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--zap-text);
+  margin: 10px 0 6px;
+}
+
+#mysignupzapnow input[type="text"],
+#mysignupzapnow input[type="email"],
+#mysignupzapnow input[type="password"] {
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid var(--zap-border);
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: #fff;
+}
+
+#mysignupzapnow input::placeholder {
+  color: #9ca3af;
+}
+
+#mysignupzapnow input:focus {
+  border-color: var(--zap-primary);
+  box-shadow: 0 0 0 4px rgba(67, 24, 255, 0.12);
+}
+
+/* Submit Button */
+#mysignupzapnow button {
+  margin-top: 20px;
+  width: 180px;
+  height: 42px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--zap-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.05s ease;
+  box-shadow: 0 8px 18px rgba(74, 58, 255, 0.28);
+}
+
+#mysignupzapnow button:hover {
+  background: var(--zap-primary-dark);
+}
+
+#mysignupzapnow button:active {
+  transform: translateY(1px);
+}
+
+/* Error messages */
+#mysignupzapnow .error {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   RIGHT SIDE - BRANDING
+   ========================= */
+#mysignupzapnow .login-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, var(--zap-grad-start), var(--zap-grad-end));
+  color: white;
+  text-align: center;
+  padding: 40px;
+  border-bottom-left-radius: 120px;
+}
+
+#mysignupzapnow .login-right h1 {
+  font-size: clamp(34px, 5.5vw, 56px);
+  letter-spacing: 1px;
+  margin: 0;
+  font-weight: 800;
+}
+
+#mysignupzapnow .login-right p {
+  margin: 8px 0 0;
+  font-size: clamp(14px, 2vw, 22px);
+  opacity: 0.95;
+  font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+@media (max-width: 980px) {
+  #mysignupzapnow .login-container {
+    grid-template-columns: 1fr;
+  }
+
+  #mysignupzapnow .login-right {
+    display: none;
+  }
+
+  #mysignupzapnow .login-left {
+    padding: 40px 24px;
+  }
+
+  #mysignupzapnow button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  #mysignupzapnow .login-left h2 {
+    margin-bottom: 20px;
+  }
+}

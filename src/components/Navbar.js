@@ -1,9 +1,23 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showScroll, setShowScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScroll(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <nav id="webnegivation">
@@ -11,9 +25,9 @@ export default function Navbar() {
         {/* Logo */}
         <div className="nav-logo">
           <Link href="/">
-          <img src="../../../img/zaplogo.png" className="logone" />
+            <img src="../../../img/zaplogo.png" className="logone" />
           </Link>
-          </div>
+        </div>
 
         {/* Toggle Button */}
         <button
@@ -30,17 +44,19 @@ export default function Navbar() {
 
         {/* Nav Links */}
         <ul className={`nav-links ${isOpen ? "active" : ""}`}>
-          {/* <li><a href="/">Payments</a></li>
-          <li><a href="/">Banking+ Payroll</a></li>
-          <li><a href="/">Engage</a></li>
-          <li><a href="/">Partners</a></li> */}
           <li><a href="/paymentproduct">Payment Products</a></li>
           <li><Link href="/intractivedash">Interactive Dashboard</Link></li> 
-          <li><Link href="https://uat.zapnowpayments.com/" >Log in</Link></li>
-          <li><Link href="https://gateway.hypertonic.co.in/signup">Sign up</Link></li>
-          <li><Link href="https://gateway.hypertonic.co.in/requestdemo" className="login-btn">Request A free demo</Link></li>
+          <li><Link href="https://uat.zapnowpayments.com/">Sign in</Link></li>
+          <li><Link href="/requestdemo" className="login-btn">Request A free demo</Link></li>
         </ul>
       </div>
+
+      {/* Scroll To Top Button */}
+      {showScroll && (
+        <div className="scroll-to-top" onClick={scrollToTop}>
+          <FaArrowUp size={24} />
+        </div>
+      )}
     </nav>
   );
 }

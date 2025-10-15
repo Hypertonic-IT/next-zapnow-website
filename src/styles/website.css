@@ -48,6 +48,7 @@
   font-size: 18px;
   color: #1a1a1a;
   max-width: 450px;
+  text-align: justify;
 }
 
 #sectionoone .requestBtn {
@@ -394,18 +395,15 @@ margin-top: 90px;
 
 .hero-section {
   background-color: #f1f5f9; /* Light background similar to image */
-  padding: 100px 20px;
+  padding: 60px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-bottom: 80px;
-  border-radius:90px
+  border-radius:10px
 }
 
-.hero-content {
-  max-width: 700px;
-}
 
 .hero-section h1 {
   font-size: 64px;
@@ -593,14 +591,14 @@ display: none;
 }
 
 #mywebsitefooter ul li span {
-  color: #0d6efd;
+  color: #4f4f4f;
   text-decoration: none;
   font-size: 0.9rem;
   transition: all 0.3s ease;
 }
 
 #mywebsitefooter ul li a {
-  color: #0d6efd;
+  color: #4f4f4f;
   text-decoration: none;
   font-size: 0.9rem;
   transition: all 0.3s ease;
@@ -629,6 +627,8 @@ display: none;
   font-size: 0.85rem;
   color: #555;
   line-height: 1.4;
+  text-align: justify;
+  padding-right: 12%;
 }
 
 #mywebsitefooter .text-center p {
@@ -785,4 +785,62 @@ display: none;
 .logone
 {
   height:60px;
+}
+#myteamgrid {
+  padding: 2rem;
+}
+
+#myteamgrid .myteamgrid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#myteamgrid .myteamgrid-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Desktop Grid Layout */
+#myteamgrid .myteamgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+#myteamgrid .myteamgrid-card {
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#myteamgrid .myteamgrid-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+}
+
+/* Top row spans 2 columns */
+#myteamgrid .myteamgrid-card.top-row {
+  grid-column: span 2;
+}
+
+/* Bottom row cards span 1 column each */
+#myteamgrid .myteamgrid-card.bottom-row {
+  grid-column: span 1;
+}
+
+/* Social links */
+#myteamgrid .social-links i {
+  font-size: 20px;
+  color: #0a66c2;
+  transition: transform 0.3s;
+}
+
+#myteamgrid .social-links i:hover {
+  transform: scale(1.2);
 }

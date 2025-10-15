@@ -148,14 +148,14 @@
       background: #f7f7f7;
       border: 1px solid #e1e1e1;
       padding: 12px;
-      font-family: monospace;
+ 
       overflow-x: auto;
       white-space: pre-wrap;
     }
    #graven .annexure-pre {
       background: #ffffff;
       border: 0;
-      font-family: monospace;
+
       white-space: pre;
       padding: 12px 0;
     }

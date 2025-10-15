@@ -13,16 +13,12 @@ export default function Footer() {
           <div className="col-lg-4 col-md-6 mb-4">
             <h5 className="fw-bold">Zapnow Payments</h5>
             <p className="small">
-              Zapnow Payments — Your Intelligent Financial Backbone.
+  Zapnow Payments — your smart, secure, and scalable platform for seamless business transactions. We connect enterprises with multiple banks to simplify payments and boost efficiency.
+</p>
+<p className="small">
+  With AI insights, real-time tracking, and easy API integration, Zapnow helps businesses save costs, stay compliant, and grow with confidence.
+</p>
 
-            </p>
-            <p className="small">
-              Zapnow Payments is a licensed Technology Service Provider (TSP) built to power the future of business transactions. Our platform enables seamless, secure, and intelligent payment experiences — whether online or offline. We connect enterprises with multiple banking partners, optimize transaction routing, and reduce operational costs through a unified dashboard. With AI-driven insights, real-time reconciliation, and predictive analytics, Zapnow helps businesses make smarter, faster financial decisions.
-
-            </p>
-            <p className="small">
-              Designed for scale, Zapnow offers transparent pay-per-transaction pricing, robust compliance, and developer-friendly APIs that make integration effortless. From generating invoices and QR codes to managing pay-ins and payouts, we simplify the complex world of digital payments. Zapnow empowers every business with flexibility, visibility, and control — helping you transact smarter, grow faster, and operate with total confidence.
-            </p>
           </div>
 
           {/* ACCEPT PAYMENTS */}
@@ -67,7 +63,7 @@ export default function Footer() {
             <h6 className="fw-bold">COMPANY</h6>
             <ul className="list-unstyled">
               <li><a href="/aboutus">About Us</a></li>
-              <li><span>Careers</span></li>
+              {/* <li><span>Careers</span></li> */}
               <li><Link href="/termsandcondition" >Terms of Use</Link></li>
               <li><Link href="/privacy" >Privacy Policy</Link></li>
               <li><Link href="/grievance" >Grievance Redressal</Link></li>
@@ -80,29 +76,35 @@ export default function Footer() {
         <div className="row mt-4">
 
           {/* SOLUTIONS */}
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <h6 className="fw-bold">SOLUTIONS</h6>
-            <ul className="list-unstyled">
-              <li><span>Education</span></li>
-              <li><span>E-commerce</span></li>
-              <li><span>SaaS</span></li>
-              <li><span>BFSI</span></li>
-            </ul>
-          </div>
+ <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
+  <h6 className="fw-bold">SOLUTIONS</h6>
+  <ul className="list-unstyled">
+    <li>
+      <Link href="/#education">Education</Link>
+    </li>
+    <li>
+      <Link href="/#ecommerce">E-commerce</Link>
+    </li>
+    <li>
+      <Link href="/#saas">SaaS</Link>
+    </li>
+    <li>
+      <Link href="/#bfsi">BFSI</Link>
+    </li>
+    <li>
+      <Link href="/#freelancer">Freelancer</Link>
+    </li>
+  </ul>
+</div>
 
-          {/* PAYROLL */}
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
-            <h6 className="fw-bold">PAYROLL</h6>
-            <ul className="list-unstyled">
-              <li><span>Zapnow Payroll</span></li>
-            </ul>
-          </div>
+
+         
 
           {/* BECOME A PARTNER */}
           <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
             <h6 className="fw-bold">BECOME A PARTNER</h6>
             <ul className="list-unstyled">
-              <li><span>Refer and Earn</span></li>
+               <li><Link href="/referandearn" >Refer and Earn</Link></li>
               {/* <li><span>Onboarding APIs</span></li> */}
             </ul>
           </div>
@@ -120,27 +122,31 @@ export default function Footer() {
           <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
             <h6 className="fw-bold">MORE</h6>
             <ul className="list-unstyled">
-              <li><a href="/footerpaymore#ourroutecore"> Route</a></li>
-              <li><a href="/footerpaymore#mypaymentusecase"> Invoices</a></li>
-              <li><a href="/footerpaymore#mypaymentusecase"> Freelancer Payments</a></li>
-              <li><a href="/footerpaymore#mypaymentusecase"> International Payments</a></li>
-              <li><a href="/footerpaymore#mypaymentusecase"> Flash Checkout</a></li>
+              <li><a href="/footerpaymore#ourroutecore">Route</a></li>
+              <li><a href="/footerpaymore#mypaytinvoice">Invoices</a></li>
+              <li><a href="/footerpaymore#mypaytfreelancer">Freelancer Payments</a></li>
+              <li><a href="/footerpaymore#myinternationalpayments">International Payments</a></li>
+              <li><a href="/footerpaymore#myflashcheckout">Flash Checkout</a></li>
+              <li><a href="/aeps">Aeps</a></li>
+              <li><a href="/dmtform">DMT</a></li>
+            </ul>
+
+          </div>
+
+          <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <h6 className="fw-bold">Contact Us</h6>
+            <ul className="list-unstyled">
+              <li><span>info@zapnowpayments.com</span></li>
+              {/* <li><span></span></li> */}
+             
             </ul>
 
           </div>
         </div>
 
-        {/* SOCIAL MEDIA */}
-        <div className="d-flex justify-content-center mt-4 mb-3">
-          <span className="social"><FaFacebookF /></span>
-          <span className="social"><FaXTwitter /></span>
-          <span className="social"><FaInstagram /></span>
-          <span className="social"><FaGithub /></span>
-          <span className="social"><FaLinkedin /></span>
-        </div>
 
         {/* ADDRESS */}
-        <div className="text-center small mt-3">
+        <div className="text-center small2 mt-3">
           <p>
             Plot No. 5B, Sector - 15A, 2nd Floor, Neelam Ajronda Chowk Metro Station, Faridabad, Haryana 121007
           </p>

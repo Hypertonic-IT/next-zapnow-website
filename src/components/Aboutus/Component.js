@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import { RiEyeLine, RiRocketLine } from "react-icons/ri";
+import { RiMoneyDollarCircleLine, RiShieldCheckLine, RiBarChartBoxLine, RiCodeBoxLine } from "react-icons/ri";
 
 export default function AboutUs() {
   return (
@@ -52,47 +54,52 @@ export default function AboutUs() {
       </section>
 
       {/* Why Choose Section */}
-      <section className="whychoose-section">
-        <h2>Why Choose Zapnow Payments?</h2>
-        <div className="why-grid">
-          <div className="why-card">
-            Transparent Pay-Per-Transaction Model – No hidden costs
-          </div>
-          <div className="why-card">
-            Robust Compliance & Risk Monitoring – Safe & Secure
-          </div>
-          <div className="why-card">Scalable Infrastructure – Grow without limits</div>
-          <div className="why-card">
-            Developer-Friendly APIs & Integrations – Plug, play, and scale
-          </div>
+<section className="whychoose-section text-center">
+      <h2>Why Choose Zapnow Payments?</h2>
+      <div className="why-grid">
+        <div className="why-card">
+          <RiMoneyDollarCircleLine size={36} className="icono text-dark mb-2" />
+          <p>Transparent Pay-Per-Transaction Model — No hidden costs</p>
         </div>
-      </section>
+        <div className="why-card">
+          <RiShieldCheckLine size={36} className="icono text-dark mb-2" />
+          <p>Robust Compliance & Risk Monitoring — Safe & Secure</p>
+        </div>
+        <div className="why-card">
+          <RiBarChartBoxLine size={36} className="icono text-dark mb-2" />
+          <p>Scalable Infrastructure — Grow without limits</p>
+        </div>
+        <div className="why-card">
+          <RiCodeBoxLine size={36} className="icono text-dark mb-2" />
+          <p>Developer-Friendly APIs & Integrations — Plug, play, and scale</p>
+        </div>
+      </div>
+    </section>
 
       {/* Vision & Mission */}
-      <section className="visionmission-section">
-        <div className="vision">
-          <h2>Our Vision</h2>
-          <p>
-            To empower every business with intelligent, reliable, and frictionless
-            financial technology.
-          </p>
-        </div>
+     <section className="visionmission-section">
+      <div className="vision text-center">
+        <RiEyeLine size={40} className="mb-2 text-dark icono" />
+        <h2> Vision</h2>
+        <p>
+          To empower every business with intelligent, reliable, and frictionless
+          financial technology.
+        </p>
+      </div>
 
-        <div className="mission">
-          <h2>Our Mission</h2>
-          <ul>
-            <li>Simplify payments for businesses of all sizes.</li>
-            <li>Provide multi-banking connectivity, AI insights, and fraud protection.</li>
-            <li>
-              Deliver a technology-first platform that maximizes efficiency and reduces
-              operational overhead.
-            </li>
-          </ul>
-        </div>
-      </section>
+      <div className="mission text-center">
+        <RiRocketLine size={40} className="mb-2 text-dark icono" />
+        <h2> Mission</h2>
+        <p className="small">
+          Our mission is to simplify payments through multi-bank connectivity, AI
+          insights, and advanced fraud protection — empowering businesses with a
+          tech-first platform for efficiency and growth.
+        </p>
+      </div>
+    </section>
 
       {/* Contact Section */}
-      <section className="contact-section">
+      {/* <section className="contact-section">
         <h3>Connect With Us</h3>
         <p>Lesus Innovations Pvt. Ltd. – Zapnow Payments</p>
         <p>
@@ -101,7 +108,7 @@ export default function AboutUs() {
         </p>
         <a href="mailto:info@zapnowpayments.com">info@zapnowpayments.com</a>
         <p className="tagline">Zapnow Payments – Fast. Intelligent. Trusted.</p>
-      </section>
+      </section> */}
     </main>
   );
 }
