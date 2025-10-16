@@ -13,16 +13,16 @@ export default function Footer() {
           <div className="col-lg-4 col-md-6 mb-4">
             <h5 className="fw-bold">Zapnow Payments</h5>
             <p className="small">
-  Zapnow Payments — your smart, secure, and scalable platform for seamless business transactions. We connect enterprises with multiple banks to simplify payments and boost efficiency.
-</p>
-<p className="small">
-  With AI insights, real-time tracking, and easy API integration, Zapnow helps businesses save costs, stay compliant, and grow with confidence.
-</p>
+              Zapnow Payments — your smart, secure, and scalable platform for seamless business transactions. We connect enterprises with multiple banks to simplify payments and boost efficiency.
+            </p>
+            <p className="small">
+              With AI insights, real-time tracking, and easy API integration, Zapnow helps businesses save costs, stay compliant, and grow with confidence.
+            </p>
 
           </div>
 
           {/* ACCEPT PAYMENTS */}
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-4">
             <h6 className="fw-bold">ACCEPT PAYMENTS</h6>
             <ul className="list-unstyled">
               <li><a href="/footerpaymentlink#mypaymentusecase">Payment Links</a></li>
@@ -36,7 +36,7 @@ export default function Footer() {
 
 
           {/* RESOURCES */}
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-4">
             <h6 className="fw-bold">RESOURCES</h6>
             <ul className="list-unstyled">
               <li><span>Blog </span></li>
@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
 
           {/* DEVELOPERS */}
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-4">
             <h6 className="fw-bold">DEVELOPERS</h6>
             <ul className="list-unstyled">
               <li><span>Docs</span></li>
@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
 
           {/* COMPANY */}
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-4">
             <h6 className="fw-bold">COMPANY</h6>
             <ul className="list-unstyled">
               <li><a href="/aboutus">About Us</a></li>
@@ -70,47 +70,39 @@ export default function Footer() {
             </ul>
 
           </div>
-        </div>
-
-        {/* SECOND ROW */}
-        <div className="row mt-4">
-
+        
           {/* SOLUTIONS */}
- <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
-  <h6 className="fw-bold">SOLUTIONS</h6>
-  <ul className="list-unstyled">
-    <li>
-      <Link href="/#education">Education</Link>
-    </li>
-    <li>
-      <Link href="/#ecommerce">E-commerce</Link>
-    </li>
-    <li>
-      <Link href="/#saas">SaaS</Link>
-    </li>
-    <li>
-      <Link href="/#bfsi">BFSI</Link>
-    </li>
-    <li>
-      <Link href="/#freelancer">Freelancer</Link>
-    </li>
-  </ul>
-</div>
-
-
-         
-
+          <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-4">
+            <h6 className="fw-bold">SOLUTIONS</h6>
+            <ul className="list-unstyled">
+              <li>
+                <Link href="/#education">Education</Link>
+              </li>
+              <li>
+                <Link href="/#ecommerce">E-commerce</Link>
+              </li>
+              <li>
+                <Link href="/#saas">SaaS</Link>
+              </li>
+              <li>
+                <Link href="/#bfsi">BFSI</Link>
+              </li>
+              <li>
+                <Link href="/#freelancer">Freelancer</Link>
+              </li>
+            </ul>
+          </div>
           {/* BECOME A PARTNER */}
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-4">
             <h6 className="fw-bold">BECOME A PARTNER</h6>
             <ul className="list-unstyled">
-               <li><Link href="/referandearn" >Refer and Earn</Link></li>
+              <li><Link href="/referandearn" >Refer and Earn</Link></li>
               {/* <li><span>Onboarding APIs</span></li> */}
             </ul>
           </div>
 
           {/* HELP */}
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-4">
             <h6 className="fw-bold">HELP & SUPPORT</h6>
             <ul className="list-unstyled">
               <li><span>Support</span></li>
@@ -119,7 +111,7 @@ export default function Footer() {
           </div>
 
           {/* MORE */}
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-4">
             <h6 className="fw-bold">MORE</h6>
             <ul className="list-unstyled">
               <li><a href="/footerpaymore#ourroutecore">Route</a></li>
@@ -133,12 +125,12 @@ export default function Footer() {
 
           </div>
 
-          <div className="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-4">
             <h6 className="fw-bold">Contact Us</h6>
             <ul className="list-unstyled">
               <li><span>info@zapnowpayments.com</span></li>
               {/* <li><span></span></li> */}
-             
+
             </ul>
 
           </div>

@@ -41,7 +41,7 @@ background: linear-gradient(90deg, #1e3cfa 0%, #f02a2a 100%);
   display: block;
   width: 80px;
   height: 3px;
-  background: #457b9d;
+  background: #1e3cfa;
   margin: 10px auto 0;
   border-radius: 2px;
 }
@@ -63,7 +63,7 @@ background: linear-gradient(90deg, #1e3cfa 0%, #f02a2a 100%);
   margin-bottom: 15px;
   font-weight: 600;
   color: #1d3557;
-  border-left: 5px solid #457b9d;
+  border-left: 5px solid #1e3cfa;
 }
 
 #footermylinks .usecase-header span {
@@ -86,7 +86,7 @@ background: linear-gradient(90deg, #1e3cfa 0%, #f02a2a 100%);
   flex-wrap: wrap;
   gap: 20px;
   transition: all 0.3s ease;
-  border-left: 5px solid #457b9d;
+  border-left: 5px solid #1e3cfa;
   width: 100%;
   box-sizing: border-box;
 }
@@ -129,7 +129,7 @@ background: linear-gradient(90deg, #1e3cfa 0%, #f02a2a 100%);
   #footermylinks .usecase-card {
     flex-direction: column;
     border-left: none;
-    border-top: 5px solid #457b9d;
+    border-top: 5px solid #1e3cfa;
     padding: 15px 20px;
     gap: 10px;
   }

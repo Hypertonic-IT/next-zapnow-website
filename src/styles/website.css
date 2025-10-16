@@ -80,6 +80,15 @@
     max-width: 100%;
     flex: 100%;
   }
+  #sectionoone .row
+  {
+    flex-direction: column-reverse;
+  }
+  #sectionoone
+/* Specificity: (1,0,0) */
+ {
+    padding: 0px 0px 40px 0;
+}
   .leftSection{
   padding-left: 1%;
   padding-right: 1%;
@@ -213,6 +222,8 @@
   font-size: 47px;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 60px;
+  margin-top:10px;
 }
 
 #payproduuctsone .pay-btn {
@@ -334,10 +345,50 @@ margin-top: 90px;
   #payproduuctsone, #unpayproduucttwo {
     padding: 40px 20px;
   }
-
+  #payproduuctsone h1 {
+  font-size: 47px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom:20px;
+  margin-top:10px;
+}
+#sectionotwoframe2 .laptop-frame {
+    padding: 10px !important;
+    
+}
   #payproduuctsone h1, #unpayproduucttwo h1 {
     font-size: 35px;
   }
+  #myteamgrid .myteamgrid-title {
+    font-size: 31px !important;
+    margin-top: 30px !important;
+    margin-bottom: 50px !important;
+  }
+  #myteamgrid {
+    padding: 20px 0px 40px 0px !important;
+}
+#mywebsitefooter .small
+{
+  padding-right: 0px !important;
+}
+  #mynewcards-on h1 {
+    font-size: 27px !important;
+    font-weight: bold;
+}
+#unpayproduucttwo p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+#unpayproduucttwo .container {
+    margin-top: 24px;
+}
+#mynewcards-on .row
+
+ {
+    margin-top: 49px;
+}
 
   #payproduuctsone .paysub-desc, #unpayproduucttwo .paysub-desc {
     font-size: 30px;
@@ -354,10 +405,16 @@ margin-top: 90px;
   }
 
   #payproduuctsone .pay-image-wrapper, #unpayproduucttwo .pay-image-wrapper {
-    position: relative;
+    position: sticky;
     top: 0;
     margin-top: 20px;
+    margin-bottom: 40px;
+
   }
+  #unpayproduucttwo .pay-right {
+    position: sticky;
+    top: 20px;
+}
 
   #payproduuctsone .pay-desc, #unpayproduucttwo .pay-desc {
     font-size: 14px;
@@ -573,6 +630,7 @@ display: none;
   margin-bottom: 1rem;
   font-weight: 600;
   color: #000;
+  text-align: left;
 }
 
 #mywebsitefooter p {
@@ -584,6 +642,7 @@ display: none;
   padding: 0;
   margin: 0;
   list-style: none;
+  text-align: left;
 }
 
 #mywebsitefooter ul li {
@@ -745,6 +804,21 @@ display: none;
   .laptop-base {
     width: 95%;
   }
+  #sectionooneframe h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+#sectionooneframe {
+  text-align: center;
+  padding: 10px 0px;
+  background-color: #f9f9f9;
+  padding-top: 30px;
+}
+#sectionooneframe .laptop-frame
+{
+  padding: 7px;
+}
 }
 
 
@@ -757,7 +831,7 @@ display: none;
   background: #fff;
   border: none;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  box-shadow: 0 5px 20px 0 #172c521a;
 }
 
 #mynewcards-on .mybox:hover {
@@ -797,7 +871,10 @@ display: none;
 
 #myteamgrid .myteamgrid-title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom:60px;
+  margin-top:40px;
+  font-size: 47px;
+  font-weight: bold;
 }
 
 /* Desktop Grid Layout */
@@ -844,3 +921,45 @@ display: none;
 #myteamgrid .social-links i:hover {
   transform: scale(1.2);
 }
+
+
+
+#myteamgrid .swiper-pagination {
+display: none;
+}
+#myteamgrid .social-links .mylink1 {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 1.4rem;
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0d6efd !important;
+}
+
+.swiper-pagination-bullet {
+  background: #0d6efd !important;
+}
+/* Swiper Navigation Arrows (Scoped to Team Section) */
+#myteamgrid .swiper-button-next,
+#myteamgrid .swiper-button-prev {
+  color: #0d6efd !important;      /* arrow color */
+  font-size: 18px !important;     /* arrow size */
+  width: 35px !important;         /* button box size */
+  height: 19px !important;
+  border-radius: 50%;
+  /* background: rgba(13, 110, 253, 0.1); light background */
+}
+
+#myteamgrid .swiper-button-next::after,
+#myteamgrid .swiper-button-prev::after {
+  font-size: 18px !important; /* icon inside arrow */
+  font-weight: bold;
+}
+

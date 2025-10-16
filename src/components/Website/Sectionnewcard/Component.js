@@ -63,8 +63,8 @@ export default function IndustryCards() {
         </center>
         <div className="row justify-content-center">
           {data.map((item, index) => (
-            <div className="col-md-3 mb-4" key={index}>
-              <div className="mybox text-center p-4 h-100 shadow-sm rounded-4">
+            <div className="col-xl-3 col-lg-4 col-md-6 mb-4" key={index}>
+              <div className="mybox text-center p-4 h-100 rounded-4">
                 <div className="myicon fs-1 mb-3">{item.icon}</div>
                 <h5 className="fw-bold mb-2">{item.title}</h5>
                 <p className="text-muted small mb-0">{item.desc}</p>
