@@ -28,7 +28,6 @@ export default function Home() {
                 </h1>
                 <p className="subtitle">
                   Zapnow Payments unifies cooperative and commercial bank APIs into a single intelligent layer — enabling enterprises to route transactions dynamically, capture better rates, and deliver frictionless pay-in, pay-out experiences across cards, UPI, and banking networks. Empowering organizations with unmatched agility, live financial visibility, and the freedom to scale with absolute control.
-
                 </p>
                 <Link href="/requestdemo"> <button className="requestBtn">
                   Request an invite &gt;
@@ -52,7 +51,7 @@ export default function Home() {
                 preload="auto"
                 controls={false}
               >
-                <source src="img/zapnow-video.mp4" type="video/mp4" />
+                <source src="img/zapnow-video1.mp4" type="video/mp4" />
               </video>
 
             </div>

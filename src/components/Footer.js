@@ -39,22 +39,9 @@ export default function Footer() {
           <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-4">
             <h6 className="fw-bold">RESOURCES</h6>
             <ul className="list-unstyled">
-              <li><span>Blog </span></li>
-              <li><span>Learn</span></li>
-              <li><span>Customer Stories</span></li>
-              <li><span>Events</span></li>
-              <li><span>Chargeback Guide</span></li>
-              <li><span>Settlement Guide</span></li>
-            </ul>
-          </div>
-
-          {/* DEVELOPERS */}
-          <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-4">
-            <h6 className="fw-bold">DEVELOPERS</h6>
-            <ul className="list-unstyled">
-              <li><span>Docs</span></li>
-              <li><span>Integrations</span></li>
-              <li><span>API Reference</span></li>
+            
+              <li><a href="/resources">Chargeback Guide</a></li>
+              <li><a href="settlementguide">Settlement Guide</a></li>
             </ul>
           </div>
 
@@ -105,7 +92,7 @@ export default function Footer() {
           <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-4">
             <h6 className="fw-bold">HELP & SUPPORT</h6>
             <ul className="list-unstyled">
-              <li><span>Support</span></li>
+              <li><Link href="/mysupport">Support</Link></li>
               <li><span>Knowledge base</span></li>
             </ul>
           </div>

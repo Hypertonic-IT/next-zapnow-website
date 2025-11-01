@@ -1,0 +1,256 @@
+#zapfaq {
+  max-width: 1100px;
+  margin: 40px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+
+#zapfaq .faq-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+
+#zapfaq .faq-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+#zapfaq .faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  cursor: pointer;
+  background: #f9f9f9;
+  transition: background 0.3s ease;
+}
+
+#zapfaq .faq-header:hover {
+  background: #f2f2f2;
+}
+
+#zapfaq .faq-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #222;
+}
+
+#zapfaq .faq-icon {
+  font-size: 20px;
+  color: #f5a623;
+}
+
+#zapfaq .faq-arrow {
+  font-size: 22px;
+  color: #555;
+  transition: transform 0.3s ease;
+}
+
+#zapfaq .faq-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+
+#zapfaq .faq-content,
+#zapfaq .faq-answer {
+  overflow: hidden;
+  transition: height .35s ease;
+}
+
+.faq-content.open,
+.faq-answer.open {
+  height: auto !important;
+  transition:  0.4s ease;
+}
+
+.faq-content, .faq-answer {
+  transition: height 0.35s ease;
+}
+
+#zapfaq .faq-item {
+  border-top: 1px solid #eee;
+}
+
+#zapfaq .faq-question {
+  padding: 14px 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+#zapfaq .faq-question:hover {
+  background: #fafafa;
+}
+
+#zapfaq .sub-arrow {
+  transition: transform 0.3s ease;
+  font-size: 18px;
+  color: #777;
+}
+
+#zapfaq .rotate {
+  transform: rotate(180deg);
+}
+
+#zapfaq .faq-answer {
+  /* height: 0; */
+  overflow: hidden;
+  color: #444;
+  line-height: 1.6;
+  font-size: 15px;
+  transition: height 0.4s ease;
+  padding: 0 20px;
+}
+
+#zapfaq .faq-answer p {
+  margin: 12px 0;
+}
+
+#zapfaq .feedback {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+}
+
+#zapfaq .feedback span {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+#zapfaq .feedback .no {
+  background: #ffecec;
+  color: #d9534f;
+  margin-bottom: 10px;
+}
+
+#zapfaq .feedback .yes {
+  background: #e8f9e8;
+  color: #5cb85c;
+  margin-bottom: 10px;
+}
+
+#zapfaq .feedback span:hover {
+  transform: scale(1.05);
+}
+
+#zapfaq .thanks-text {
+  color: #28a745;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#zapfaq .zap-form-box {
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  position: sticky;
+  top:30px;
+}
+
+#zapfaq .zap-form-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0d1a3d;
+}
+
+#zapfaq .zap-form-sub {
+  font-size: 15px;
+  color: #5f6b91;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+
+#zapfaq .zap-label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+  color: #1f2a50;
+}
+
+#zapfaq .zap-select select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d5d9e4;
+  font-size: 14px;
+  /* background: #fff; */
+}
+
+#zapfaq .zap-phone-input {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+#zapfaq .zap-country {
+  width: 80px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d5d9e4;
+  font-size: 14px;
+  background: #fff;
+}
+
+#zapfaq .zap-phone-input  {
+font-size: 14px;
+}
+#zapfaq .zap-phone-input input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d5d9e4;
+  font-size: 14px;
+}
+
+
+#zapfaq .zap-hint {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #7482a8;
+}
+
+#zapfaq .zap-btn {
+  width: 100%;
+  background: #6489ff;
+  color: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  margin-top: 22px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#zapfaq .zap-btn:hover {
+  background: #5378f2;
+}
+
+#zapfaq .zap-footer-text {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #556188;
+}
+#zapfaq .zap-footer-text a {
+  color: #4d7bff;
+  font-weight: 500;
+  text-decoration: none;
+}

@@ -4,6 +4,7 @@ import '@/styles/website.css';
 import '@/styles/webnav.css';
 import '@/styles/aepsform.css';
 import '@/styles/aboutus.css';
+import '@/styles/mysupport.css';
 import '@/styles/refer.css';
 import '@/styles/footerlink.css';
 import Toast from '../components/Toast';
