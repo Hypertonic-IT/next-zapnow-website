@@ -46,7 +46,7 @@ export default function Navbar() {
         <ul className={`nav-links ${isOpen ? "active" : ""}`}>
           <li><a href="/paymentproduct">Payment Products</a></li>
           <li><Link href="/intractivedash">Interactive Dashboard</Link></li> 
-          <li><Link href="https://uat.zapnowpayments.com/">Sign in</Link></li>
+          <li><Link href="https://dashboard.zapnowpayments.com/">Sign in</Link></li>
           <li><Link href="/requestdemo" className="login-btn">Request A free demo</Link></li>
         </ul>
       </div>
