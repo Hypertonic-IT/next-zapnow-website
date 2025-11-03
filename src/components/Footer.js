@@ -93,7 +93,7 @@ export default function Footer() {
             <h6 className="fw-bold">HELP & SUPPORT</h6>
             <ul className="list-unstyled">
               <li><Link href="/mysupport">Support</Link></li>
-              <li><span>Knowledge base</span></li>
+              {/* <li><span>Knowledge base</span></li> */}
             </ul>
           </div>
 
